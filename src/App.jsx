@@ -40,7 +40,10 @@ function App() {
     <Wrapper>
     <Routes>
     
-    <Route  path="/" element={<Home/>}/>
+    
+    <Route  path="/" element={<Home type="rendom"/>}/>
+    <Route  path="trend" element={<Home type="trend"/>}/>
+    <Route  path="subscription" element={<Home type="sub"/>}/>
     <Route path="Video" element={<Video/>}/>
     <Route path=":id" element={<Video/>}/>
     <Route path="Login" element={<Login/>}/>

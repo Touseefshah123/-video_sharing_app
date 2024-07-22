@@ -52,9 +52,10 @@ const Menu = () => {
         <Logo src='/touseef.png' alt="Touseef" />
         <LogoText>YouTube</LogoText>
       </LogoContainer>
-      <NavItem icon={<HomeIcon />} label="Home" />
-      <NavItem icon={<ExploreIcon />} label="Explore" />
-      <NavItem icon={<SubscriptionsIcon />} label="Subscriptions" />
+   <Link to='/' style={{textDecoration:"none"}}>  <NavItem icon={<HomeIcon />} label="Home" /></Link>
+   
+   <Link to='/' style={{textDecoration:"none",color:"inherit"}}>  <NavItem icon={<ExploreIcon />} label="Explore" /></Link>
+   <Link to='/subscription' style={{textDecoration:"none",color:"inherit"}}>  <NavItem icon={<SubscriptionsIcon />} label="Subscriptions" /></Link>
       <Separator />
       <NavItem icon={<LocalLibraryIcon />} label="Library" />
       <NavItem icon={<MemoryIcon />} label="Memory" />
